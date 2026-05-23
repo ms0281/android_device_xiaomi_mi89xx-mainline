@@ -76,3 +76,6 @@ PRODUCT_VENDOR_PROPERTIES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(TARGET_DEVICE_PATH) \
     kernel/mainline/configs
+
+# Override OTA key
+PRODUCT_OTA_PUBLIC_KEYS := vendor/lineage/build/target/product/security/releasekey
