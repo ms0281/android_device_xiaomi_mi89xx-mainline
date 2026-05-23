@@ -9,6 +9,10 @@ include device/xiaomi/mi89xx-mainline/BoardConfig.mk
 # A/B
 AB_OTA_UPDATER := false
 
+# Verified Boot
+# (only needed for signing)
+BOARD_AVB_ENABLE := false
+
 # Boot parameters
 BOARD_KERNEL_CMDLINE += \
     androidboot.hardware=mi8953_a
