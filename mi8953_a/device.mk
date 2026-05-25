@@ -79,3 +79,6 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Override OTA key
 PRODUCT_OTA_PUBLIC_KEYS := vendor/lineage/build/target/product/security/releasekey
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/bin/setup-zram.sh:$(TARGET_COPY_OUT_VENDOR)/bin/setup-zram.sh
