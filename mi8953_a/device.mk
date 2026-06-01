@@ -71,6 +71,10 @@ DEVICE_PACKAGE_OVERLAYS += \
 # Properties
 PRODUCT_VENDOR_PROPERTIES += \
     vendor.remoteproc.4080000_remoteproc.ignore=1
+    ro.vendor.iio.accel.quirks=no-trig \
+    ro.vendor.iio.anglvel.quirks=no-trig \
+    ro.vendor.iio.accel.x.opt_scale=-1 \
+    ro.vendor.iio.accel.y.opt_scale=-1
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \

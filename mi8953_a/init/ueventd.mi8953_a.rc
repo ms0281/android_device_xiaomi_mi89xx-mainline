@@ -5,4 +5,6 @@
 
 import /vendor/etc/ueventd.mi89xx.rc
 
+/dev/iio:device* 0660 system system
+
 modalias_handling enabled
